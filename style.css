@@ -54,21 +54,14 @@ header {
     color:white;
 }
 
-img {
-    border-radius: 20%;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
-}
 
 .main .photo {
     margin-left: 200px;
-    transition: 1 ease;
-    -webkit-transition: 1 ease;
-    -moz-transition: 1 ease;
-    -ms-transition: 1 ease;
-    -o-transition: 1 ease;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
 }
 .main .photo:hover {
     transform: scale(1.1);
@@ -110,11 +103,11 @@ img {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     margin-bottom: 20px;
-    transition: 0.7;
-    -webkit-transition: 0.7;
-    -moz-transition: 0.7;
-    -ms-transition: 0.7;
-    -o-transition: 0.7;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
 }
 .main .content .main-btn:hover {
       background-color: #d71818;
@@ -131,62 +124,165 @@ img {
 }
 
 
-.cards .title {
+.title {
     display: flex;
     justify-content: center;
     color:#bf0f0f;
+    margin-top: 60px;
     margin-bottom: 40px;
-    transition: 0.7 ease;
-    -webkit-transition: 0.7 ease;
-    -moz-transition: 0.7 ease;
-    -ms-transition: 0.7 ease;
-    -o-transition: 0.7 ease;
+   
 }
-.cards .title:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-.cards .content {
+.contents {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 
 }
-.cards .content .card {
+.card {
     color: white;
     width: 250px;
     padding: 20px;
     margin-right: 30px;
     box-shadow: 0 5px 25px rgba(255, 255, 255, 15%);
-    transition:0.7 ease ;
-    -webkit-transition:0.7 ease ;
-    -moz-transition:0.7 ease ;
-    -ms-transition:0.7 ease ;
-    -o-transition:0.7 ease ;
+    transition:0.7s ease ;
+    -webkit-transition:0.7s ease ;
+    -moz-transition:0.7s ease ;
+    -ms-transition:0.7s ease ;
+    -o-transition:0.7s ease ;
 }
 
-.cards .content .card:hover {
+.card:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-.cards .content .card .icon {
+.cards .contents .card .icon {
     color:#bf0f0f; 
     font-size: 8em;
     text-align: center;
 }
-.cards .content .card .info {
+.cards .contents .card .info {
     text-align: center;
 }
 
-.cards .content .card .info p {
+.cards .contents .card .info p {
     font-size: 0.9em;
     margin-top: 10px;
+}
+
+
+.projects .contents {
+      margin-top: 50px;
+}
+
+.project-card {
+    background-color: white;
+    min-height: 14em;
+    width: 20em;
+    border: 1px solid white;
+    overflow: hidden;
+    margin: 20px;
+    transition: 0.7s ease;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.project-card:hover img {
+    opacity: 0.5;
+}
+.project-card img {
+    width: 100%;
+}
+.project-card p {
+    font-size: 0.7em;
+    margin:10px 3px 20px ;
+}
+
+.project-card span {
+    display: inline-block;
+    color: #bf0f0f;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.project-card a { 
+    color: #3e3c3c;
+    font-weight: 800;
+    margin-left: 80px;
+}
+
+.card .icon {
+    color: #bf0f0f;
+    font-size: 2em;
+    
+}
+
+.more:hover{
+    color:#bf0f0f;
+}
+
+.contact .card .icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact .card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact .card .info h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.contact .card .info p {
+    font-size: 0.6em;
+}
+
+footer {
+    margin-top: 30px;
+   color: white;
+   min-height:3em;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   background-color:#3e3c3c
+}
+
+footer p {
+    background-color: #3e3c3c;
+}
+footer .social {
+    background-color: #3e3c3c;
+}
+footer .social a i {
+    background-color: #3e3c3c;
+    color: white;
+    padding: 10px;
+}
+
+footer p span {
+    background-color: #3e3c3c;
+    color: #bf0f0f;
+    font-weight: 700;
 }
